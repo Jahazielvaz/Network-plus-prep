@@ -40,38 +40,6 @@ A socket is one endpoint of a two-way communication link between two programs ru
 - *TCP & UDP port ranges: Any number between 0 and 65,535*
 
 
-## PROTOCOLS
-- TCP/IP & UDP Protocols are responsible for transporting data. It would be the road in the truck analogy.
-
-### ICMP(Internet Control Message Protocol)
-- You can think of it as text messaging between devices to check in and see how somebody might be doing.
-
-- This is another protocol carried by IP, and it's not typically used for data transfer. It's commonly used for administrative purposes. For example, you may want to check to see if a machine is operating or not. At which point you would send an ICMP request, to see if that device is there. If the device is there, it'll send an ICMP response.
-
-- Devices can also use ICMP to notify other devices on the network that things are not going so well. For example if you're sending information to another network, and the router from that network realizes that it's not able to communicate with the other network, it might send you back an ICMP to notify you that it can't establish a connection. It can also notify you that the TTL has expired.
-
-### DNS (Domain Name System)
-- Converts names to IP addresses.
-
-### SMTP (Simple Mail Transfer Protocol)
-- Server to server email transfer
-- We also use this protocol to send mail from a device to a mail server.
-- Commonly configured on mobile devices and email clients
-
-### Incoming Mail PROTOCOLS
-- Other protocols are used for clients to receive Email
-- IMAP: One of the email receiving protocols
-- POP3: One of the email receiving protocols
-
-### FTP (File Transfer Protocol)
-- Transfers files between systems
-- Authenticates with a username and password
-- Full featured functionality (list, add, delete, etc.)
-
-### SFTP (Secure File Transfer Protocol)
-- Uses SSH as the underlying protocol to transfer encrypted files. For this reason, it uses the same port number as SSH.
-- It's a full feature file transfer protocol. This means, some of the things it can do are, resuming interrupted transfers, directory listings, remote file removal.
-
 --------------------------------------------
 
 ## COMMUNICATION NETWORKS
